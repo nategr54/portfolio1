@@ -13,10 +13,74 @@
 img{
   display: block;
   margin: 0 auto;
-  width: 25%;
+  width: 50%;
 }
-
+body{
+  background-color: black;
+  color: white;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+body > nav {
+  height: 3rem;
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
+  box-shadow;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin: 2rem;
+}
+
+/****************/
+
+.about-me {
+  height: 30rem;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-me > section {
+  width: 45%;
+  margin: .2rem;
+  padding: .2rem;
+}
+.about-me h1 {
+  font-size: 2rem;
+}
+.about-me > img{
+  max-width: 50%;
+  margin: .2rem;
+}
+
+/**********/
+
+#projects {
+  border: 2px solid blue;
+  
+}
+.container {
+  background-color: ivory;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project1, .project2, .project3 {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
