@@ -5,7 +5,7 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
-}
+  font-family: 'Roboto', sans-serif;}
 
 /******************************************
 /* LAYOUT
@@ -13,59 +13,70 @@
 img{
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 30%;
 }
 body{
   background-color: black;
   color: white;
+  background-image: url(../images/mountaineer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: coral;
+}
+a:hover {
+  color: coral;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 body > nav {
-  height: 3rem;
+  height: 4rem;
   display: flex;
-  justify-content:  space-between;
+  justify-content:  center;
   align-items: center;
-  box-shadow;
+  font-variant: small-caps;
+  background-color: transparent;
 }
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 nav li {
-  margin: 2rem;
+  margin: 4rem;
 }
 
 /****************/
 
-.about-me {
-  height: 30rem;
-  border: 2px solid red;
+.hero {
+  height: 35rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
-.about-me > section {
-  width: 45%;
+.hero > section {
+  width: 40%;
   margin: .2rem;
-  padding: .2rem;
 }
-.about-me h1 {
+.hero h1 {
   font-size: 2rem;
 }
-.about-me > img{
-  max-width: 50%;
-  margin: .2rem;
+/**********/
+.about-me {
+  
 }
-
 /**********/
 
 #projects {
-  border: 2px solid blue;
-  
+
 }
 .container {
   background-color: ivory;
@@ -84,3 +95,7 @@ nav li {
   align-items: center;
 }
 
+div > header {
+  margin: 3rem;
+  font-size: 4rem;
+}
